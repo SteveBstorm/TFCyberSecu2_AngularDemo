@@ -1,0 +1,22 @@
+<p>signal works!</p>
+<p>Valeur : {{value()}}</p>
+
+<p>Valeur de la prop : {{valeurProp}}</p>
+
+<button (click)="value.set(42)">signal</button>
+<button (click)="increment()">prop</button>
+
+<hr />
+<div class="content">
+  <div *ngFor="let i of liste"
+  (click)="value.set(i+1)"
+  [class]="value() > i ? 'red' : classColor()"
+  ></div>
+</div>
+
+
+<ul>
+  <li><input type="radio" id="blue" name="color" (change)="class.set(Color.blue)" /> Bleu</li>
+  <li><input type="radio" id="blue" name="color" (change)="class.set(Color.green)" /> Vert</li>
+  <li><input type="radio" id="blue" name="color" (change)="class.set(Color.red)" /> Rouge</li>
+</ul>

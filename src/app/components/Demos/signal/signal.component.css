@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  gap : 10px;
+  flex-direction: row;
+}
+
+.red {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border : 1px black solid;
+}
+
+.green {
+  background-color: chartreuse;
+  height: 50px;
+  width: 50px;
+  border : 1px black solid;
+}
+.blue {
+  background-color: lightblue;
+  height: 50px;
+  width: 50px;
+  border : 1px black solid;
+}
