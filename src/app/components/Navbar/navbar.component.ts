@@ -54,6 +54,11 @@ export class NavbarComponent {
           title: 'Signals',
           url: '/demos/signal',
           isActive: false,
+        },
+        {
+          title: 'Conso API',
+          url: '/demos/consoapi',
+          isActive: false,
         }
       ],
       isActive: true

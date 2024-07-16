@@ -15,6 +15,7 @@ import { ErrorComponent } from './components/Demos/routing/error/error.component
 import { RoutingComponent } from './components/Demos/routing/routing.component';
 import { CibleComponent } from './components/Demos/routing/cible/cible.component';
 import { SignalComponent } from './components/Demos/signal/signal.component';
+import { ApiconsoComponent } from './components/Demos/apiconso/apiconso.component';
 
 export const routes: Routes = [
     {path : '', redirectTo : 'demos/bindings', pathMatch: 'full'},
@@ -29,6 +30,7 @@ export const routes: Routes = [
         {path : 'routing', component : RoutingComponent},
         {path : 'signal', component : SignalComponent},
         {path : 'cible/:info', component : CibleComponent},
+        {path : 'consoapi', component : ApiconsoComponent},
     ]},
     {path: 'exos', children: [
         {path: 'chrono', component: ChronoComponent},
